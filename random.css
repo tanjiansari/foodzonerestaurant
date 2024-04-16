@@ -1,0 +1,63 @@
+div {
+    height: 300px;
+    width: 200px;
+    display: inline-block;
+    background-color: aquamarine;
+    border: 2px solid black;
+    /* transition: all 1s ease-in; */
+    /* animation-iteration-count: infinite; */
+    animation-name: decent;
+    animation-duration: 0.75s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; 
+
+}
+body{
+    /* height: 300px;
+    width: 200px; */
+    animation-name: color;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; 
+}
+@keyframes color{
+    from{ background-color: rgb(243, 1, 1);}
+    to{ background-color: rgb(129, 10, 198);}
+}
+
+@keyframes decent{
+    from{ transform: rotate(360deg);}
+    to{ transform: rotate(90deg);}
+}
+
+/* @keyframes decent{
+    from{ transform: translate(50px, 10px);    }
+    to{ transform: translate(500px, 600px);}
+} */
+div:hover{
+    transform: scale(0.5);
+    transform: rotate(360deg);
+    transform: translate(200px, 300px);
+}
+#photo1{
+    background-image: url(../photo/decent1.jpg);
+    background-size: cover;
+
+}
+
+#photo2{
+    background-image: url(../photo/decent2.jpg);
+    background-size: cover;
+}
+#photo3{
+    background-image: url(../photo/decent3.jpg);
+    background-size: cover;
+}
+#photo4{
+    background-image: url(../photo/decent4.jpg);
+    background-size: cover;
+}
+#photo5{
+    background-image: url(../photo/decent5.jpg);
+    background-size: cover;
+}
